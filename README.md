@@ -1,2 +1,2 @@
-# DataBase
-NTNU1121-資料庫系統
+# DB
+NTNU112-1 DataBase

@@ -2,7 +2,7 @@
 
 ## Course Data
 112-1 DataBase
-- Teacher： Prof. 蔡芸琤  
+- Teacher： Prof. Yun - Cheng , Tsai
 - Name ： Li - Wen , Hsu
 - Department Level ：TAHRD 113 
 

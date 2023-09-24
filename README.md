@@ -23,3 +23,5 @@
 
 ## Homework
 ### Homework 0 
+[MySQL](https://youtu.be/bjPWRYj8qoI?si=R5hTLCyHGFIEiqxT)
+

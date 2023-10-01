@@ -26,7 +26,8 @@
 [MySQL](https://youtu.be/bjPWRYj8qoI?si=R5hTLCyHGFIEiqxT)
 
 ### Homework 1
-[ERD](https://github.com/HSULW/Database/blob/main/HW1.png)
+[Graph](https://github.com/HSULW/Database/blob/main/HW1.png)
+[CRUD&ERD](https://youtu.be/kXMYEopmEtA)
 
 ### Homework 2
 [CRUD in WebAPP](https://youtu.be/E4SDAq-m0ug)

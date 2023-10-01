@@ -28,7 +28,6 @@
 ### Homework 1
 [ERD](https://github.com/HSULW/Database/blob/main/HW1.png)
 
-
 ### Homework 2
 [CRUD in WebAPP](https://youtu.be/E4SDAq-m0ug)
 

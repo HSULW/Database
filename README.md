@@ -26,5 +26,5 @@
 [MySQL](https://youtu.be/bjPWRYj8qoI?si=R5hTLCyHGFIEiqxT)
 
 ### Homework 1
-
+[ERD](https://github.com/HSULW/Database/blob/main/HW1.png)
 

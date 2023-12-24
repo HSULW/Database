@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const CONNECTION_STRING =
-  "mongodb+srv://41071119h:O200617985@irene.9urfdjd.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://hsu:qaz15988@cluster0.viar5ji.mongodb.net/";
 const DATABASE_NAME = "Ideadb";
 let database;
 

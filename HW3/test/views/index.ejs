@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Record</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        .edit-form {
+            display: none;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0; /* Initial opacity set to 0 */
+            animation: fadeIn 0.5s ease-in-out forwards; /* Animation */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker Green on hover */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sports Record</h1>
+
+    <% if (items.length > 0) { %>
+        <ul>
+            <% items.forEach(item => { %>
+                <li>
+                    <strong>Sport:</strong> <%= item.sport %>, <strong>Time:</strong> <%= item.time %> mins
+                    <form action="/delete" method="post">
+                        <input type="hidden" name="itemId" value="<%= item._id %>">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <button onclick="toggleEditForm('<%= item._id %>')">Edit</button>
+                    <form action="/edit" method="post" class="edit-form" id="<%= item._id %>">
+                        <input type="hidden" name="itemId" value="<%= item._id %>">
+                        <input type="text" name="newSport" placeholder="New Sport">
+                        <input type="text" name="newTime" placeholder="New Time">
+                        <button type="submit">Save</button>
+                    </form>
+                </li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <p>No items found.</p>
+    <% } %>
+
+    <form action="/" method="post">
+        <input type="text" name="sport" placeholder="Sport" required>
+        <input type="text" name="time" placeholder="Time(mins)" required>
+        <button type="submit">Add Item</button>
+    </form>
+
+    <script>
+        function toggleEditForm(itemId) {
+            const editForm = document.getElementById(itemId);
+            editForm.style.display = editForm.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

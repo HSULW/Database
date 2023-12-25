@@ -34,3 +34,6 @@
 
 ### Homework 3
 [SQL to NoSQL](https://youtu.be/1OcfPQiqdvs)
+
+### Homework 5
+[Deploy to cloud service](https://youtu.be/lLqc7DdbAEs)
